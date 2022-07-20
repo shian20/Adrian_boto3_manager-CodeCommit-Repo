@@ -13,7 +13,7 @@ log = logging.getLogger()
 
 
 def create_bucket(name, region=None):
-    region = region or 'us-east-2'
+    region = region or 'ap-southeast-1'
     client = boto3.client('s3', region_name=region)
     params = {
             'Bucket': name,
